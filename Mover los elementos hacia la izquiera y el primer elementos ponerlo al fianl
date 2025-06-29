@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main()
+{  int n,temp;
+cout<<"ingrese la cantidad de elementos: ";
+cin>>n;
+int num[n];
+for(int i=0;i<n;i++)
+{
+    cout<<"Digite el  numero: ";
+    cin>>num[i];
+}
+temp=num[0];
+for(int i=0;i<n-1;i++)
+{
+
+
+    num[i]=num[i+1];
+
+
+}
+num[n-1]=temp;
+
+
+for(int j=0;j<n;j++)
+{
+    cout<<num[j]<<" ";
+}
+
+return 0;
+
+}
